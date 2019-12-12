@@ -1,0 +1,23 @@
+﻿@model VideoViewModel
+    @*Especify which datatype we are going to use // man måste spara file for att det funkar*@
+
+@*<section>
+    <h3>@Model.Title</h3>
+    <div>@Model.Genre</div>
+    <div>
+        <td><a asp-action="Details" asp-route-id="@Model.Id">Details</a></td>
+        <td><a asp-action="Edit" asp-route-id="@Model.Id">Edit</a></td>
+    </div>
+</section>*@
+
+<div class="card border-success mb-3">
+
+    <div class="card-header bg-success border-success">@Model.Title</div>
+
+    <div class="card-body">
+        <p class="card-text">@Model.Genre</p>
+
+        <a asp-action="Details" asp-route-id="@Model.Id">Details</a>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+    </div>
+</div>

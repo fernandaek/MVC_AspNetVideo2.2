@@ -1,0 +1,17 @@
+﻿
+
+@model VideoViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<div>Id: @Model.Id</div>
+<div>Title: @Model.Title</div>
+<div>Genre: @Model.Genre</div>
+
+@Html.ActionLink("Home", "Index") @*I could create a tag helper in the tradicional way with <a></a>as well*@
+
